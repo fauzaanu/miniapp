@@ -13,6 +13,7 @@ FIRST_PARTY_APPS = [
     # The management command improves the manage.py startapp command to automatically add apps inside this list
     'onlydjango',
     # Your django apps go below
+    'apps.notcoin',
 ]
 
 ALL_AUTH_APPS = [
@@ -48,30 +49,8 @@ DJANGO_APPS = [
     "django.contrib.sitemaps",
 ]
 
-WAGTAIL_APPS = [
-    'wagtail.locales',
-    'wagtail.contrib.forms',
-    'wagtail.contrib.redirects',
-    'wagtail.embeds',
-    'wagtail.sites',
-    'wagtail.users',
-    'wagtail.snippets',
-    'wagtail.documents',
-    'wagtail.images',
-    'wagtail.search',
-    'wagtail.admin',
-
-    'wagtail',
-
-    'modelcluster',
-    'taggit',
-]
-WAGTAIL_SITE_NAME = 'My Example Site'
-WAGTAILADMIN_BASE_URL = 'http://onlydjango.com'
-WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
-
 INSTALLED_APPS = (DJANGO_APPS + ALL_AUTH_APPS + THIRD_PARTY_APPS +
-                  FIRST_PARTY_APPS + WAGTAIL_APPS)
+                  FIRST_PARTY_APPS)
 
 SITE_ID = 1
 CSRF_TRUSTED_ORIGINS = ["https://onlydjango.com", "https://www.onlydjango.com"]
@@ -79,11 +58,10 @@ CSRF_TRUSTED_ORIGINS = ["https://onlydjango.com", "https://www.onlydjango.com"]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    'wagtail.contrib.redirects.middleware.RedirectMiddleware',  # COMMENT FOR NON WAGTAIl
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.auth.middleware.LoginRequiredMiddleware",
+    # "django.contrib.auth.middleware.LoginRequiredMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -199,3 +177,16 @@ SITE_NAME = os.getenv("SITE_NAME")
 #     "MaxAgeSeconds": 1
 #   }
 # ]
+
+SITE_NAME = "NOTCOIN - PROBABLY NOTHING"
+SITE_AUTHOR = "NOTCOIN - PROBABLY NOTHING"
+SITE_KEYWORDS = "NOTCOIN - PROBABLY NOTHING"
+SITE_DESCRIPTION = "NOTCOIN - PROBABLY NOTHING"
+OG_TYPE = "NOTCOIN - PROBABLY NOTHING"
+OG_TITLE = "NOTCOIN - PROBABLY NOTHING"
+OG_DESCRIPTION = "NOTCOIN - PROBABLY NOTHING"
+OG_IMAGE = "NOTCOIN - PROBABLY NOTHING"
+TWITTER_CARD = "NOTCOIN - PROBABLY NOTHING"
+TWITTER_TITLE = "NOTCOIN - PROBABLY NOTHING"
+TWITTER_DESCRIPTION = "NOTCOIN - PROBABLY NOTHING"
+TWITTER_IMAGE = "NOTCOIN - PROBABLY NOTHING"

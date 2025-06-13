@@ -1,0 +1,27 @@
+{% load static %}
+<c-layout>
+    <div class="flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-black">
+        <div class="relative flex items-center justify-center group">
+            <!-- glow -->
+            <div class="absolute w-48 h-48 bg-emerald-400 rounded-full filter blur-3xl opacity-30
+                  group-hover:opacity-50 transition-opacity duration-300"></div>
+
+            <!-- main coin -->
+            <div class="relative w-40 h-40 rounded-full
+                  bg-gradient-to-br from-emerald-300 via-emerald-400 to-emerald-500
+                  shadow-2xl flex items-center justify-center
+                  cursor-pointer
+                  transition-transform duration-300 ease-out
+                  hover:scale-105 active:scale-95">
+
+                <div class="w-28 h-28 rounded-full
+                    bg-gradient-to-br from-emerald-200 to-emerald-300
+                    shadow-inner flex items-center justify-center
+                    transition-transform duration-300 ease-out
+                    group-hover:scale-95 group-active:scale-90">
+                    <i class="fab fa-telegram text-5xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</c-layout>
